@@ -2,15 +2,17 @@ import { Image } from 'react-bootstrap';
 import Link from 'next/link';
 import { Container, Col, Row } from 'react-bootstrap';
 
-const styles = {
-  background: '#40333'
-};
+// const styles = {
+//   background: 'red'
+// };
+
 const TrendingPost = () => (
-  <div id="trending-post-section" className={`styles`}>
+  <div id="trending-post-section">
     <h2 className="section-title">
       <span>Trending Post</span>
     </h2>
     <h4 className="section-cap">Our best stuff for product designers</h4>
+
     <Container className="block-wrapper pl-0 pr-0" fluid>
       <Row>
         <Col className="article-block" xs={12} md={3}>
@@ -148,24 +150,6 @@ const TrendingPost = () => (
       </Row>
     </Container>
     <style jsx>{`
-      .section-title {
-        color: rgb(0, 0, 0);
-        font: 700 45px/55px 'Roboto', sans-serif;
-        margin: 0px 0px 0px;
-      }
-      .section-cap {
-        text-transform: uppercase;
-        z-index: 10;
-        position: relative;
-        cursor: pointer;
-        display: inline-block;
-        font: bold 11px/16px 'Roboto', sans-serif;
-        padding: 0px 0px 12px 0px;
-        color: #000000;
-      }
-      .image-wrapper {
-        margin-bottom: 20px;
-      }
       .article-title {
         -webkit-letter-spacing: 0.2px;
         -moz-letter-spacing: 0.2px;

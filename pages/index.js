@@ -4,11 +4,11 @@ import fetch from 'isomorphic-unfetch';
 import '../src/style.css';
 import { Image } from 'react-bootstrap';
 
-import EditorChoicePost from '../components/EditorChoicePost';
-import PopularPosts from '../components/PopularPosts';
-import TrendingPost from '../components/TrendingPost';
-import SuggestionPosts from '../components/SuggestionPosts';
-import RecentPosts from '../components/RecentPosts';
+import EditorChoice from '../components/EditorChoicePost/EditorChoice';
+import PopularPosts from '../components/SideBarPosts/PopularPosts';
+import TrendingPost from '../components/TrendingPost/TrendingPost';
+import SuggestionPosts from '../components/SideBarPosts/SuggestionPosts';
+import RecentPosts from '../components/RecentPosts/RecentPosts';
 
 import { Container, Col, Row, Button } from 'react-bootstrap';
 
@@ -16,12 +16,12 @@ const trendingBackground = {
   background: '#f7f7f7'
 };
 
-const Index = props => (
+const Index = () => (
   <Layout>
     <Container>
       <Row className="mb-5">
         <Col xs={12} md={7}>
-          <EditorChoicePost />
+          <EditorChoice />
         </Col>
         <Col xs={12} md={{ span: 4, offset: 1 }}>
           <PopularPosts />

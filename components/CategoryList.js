@@ -1,125 +1,322 @@
 import { Image } from 'react-bootstrap';
 import Link from 'next/link';
-import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
-
-const theme = {
-  red: '#ff0000',
-  black: '#393939',
-  grey: '#3a3a3a',
-  lightgrey: '#e1e1e1',
-  offWhite: '#ededed',
-  maxWidth: '1000px',
-  bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)'
-};
-
-const Wrapper = styled.section`
-  padding: 4em;
-  background: papayawhip;
-`;
-
-const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: palevioletred;
-`;
-
-const MyButton = styled.button`
-  background: red;
-  font-size: ${props => (props.huge ? '100px' : '50px')};
-  span {
-    font-size: 100px;
-  }
-  .txt {
-    color: pink;
-  }
-`;
-
-const StyledPage = styled.div`
-  background: green;
-  color: black;
-`;
-
-const Inner = styled.div`
-  max-width: ${props => props.theme.maxWidth};
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: ${props => props.theme.lightgrey};
-`;
-
-const Logo = styled.h1`
-  font-size: 4rem;
-  margin-left: 2rem;
-  position: relative;
-  z-index: 2;
-  transform: skew(-7deg);
-  a {
-    padding: 0.5rem;
-    background: ${props => props.theme.red};
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-  @media (max-width: 1300px) {
-    margin: 0;
-    text-align: center;
-  }
-`;
-
-const StyledHeader = styled.header`
-  .bar {
-    border-bottom: 10px solid ${props => props.theme.black};
-    display: grid;
-    grid-template-columns: auto 1fr;
-    justify-content: space-between;
-    align-items: stretch;
-    @media (max-width: 1300px) {
-      grid-template-columns: auto 1fr;
-      justify-content: center;
-    }
-  }
-  .sub-bar {
-    display: grid;
-    grid-template-columns: 1fr;
-    border-bottom: 1px soild ${props => props.theme.lightgrey};
-  }
-`;
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    color: green;
-    font-family: "Roboto", sans-serif;
-  }
-`;
+import { Container, Col, Row, Button } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const CategoryList = () => (
-  <ThemeProvider theme={theme}>
-    <Wrapper>
-      <Title>Hello World!</Title>
-      <MyButton huge>
-        Click Me<span>000</span> <span className="txt">111</span>
-      </MyButton>
-      <br />
-      <MyButton>
-        Click Me<span>000</span> <span className="txt">111</span>
-      </MyButton>
-      <StyledPage>
-        <Inner>
-          <StyledHeader>
-            <div className="bar">
-              <Logo>
-                <Link href="/">
-                  <a>Sick Fits</a>
+  <div>
+    <Container className="block-wrapper pl-0 pr-0" fluid>
+      <Row>
+        <Col className="article-block pb-4" xs={12} md={3}>
+          <div className="hover">
+            <div className="article-img">
+              <Link as={`/`} href={`/`}>
+                <a>
+                  <div className="image-wrapper">
+                    <Image
+                      src="/static/categories/comedy.jpg"
+                      alt=""
+                      className="bg-img"
+                      fluid
+                    />
+                  </div>
+                </a>
+              </Link>
+            </div>
+            <div className="article-content">
+              <div className="cat-title">
+                <Link as={`/`} href={`/`}>
+                  <a>
+                    <h3 className="article-title">
+                      <span>Comedy</span>
+                    </h3>
+                  </a>
                 </Link>
-              </Logo>
+              </div>
+              <div className="bm-icon text-right">
+                <Link as={`/`} href={`/`}>
+                  <a className="fa-circle ht">
+                    <FontAwesomeIcon icon={['fas', 'heart']} size="sm" />
+                  </a>
+                </Link>
+              </div>
             </div>
-            <div className="sub-bar">
-              <p>Search</p>
+          </div>
+        </Col>
+        <Col className="article-block pb-4" xs={12} md={3}>
+          <div className="hover">
+            <div className="article-img">
+              <Link as={`/`} href={`/`}>
+                <a>
+                  <div className="image-wrapper">
+                    <Image
+                      src="/static/categories/novel.jpg"
+                      alt=""
+                      className="bg-img"
+                      fluid
+                    />
+                  </div>
+                </a>
+              </Link>
             </div>
-          </StyledHeader>
-        </Inner>
-      </StyledPage>
-    </Wrapper>
-  </ThemeProvider>
+            <div className="article-content">
+              <div className="cat-title">
+                <Link as={`/`} href={`/`}>
+                  <a>
+                    <h3 className="article-title">
+                      <span>Novel</span>
+                    </h3>
+                  </a>
+                </Link>
+              </div>
+              <div className="bm-icon text-right">
+                <Link as={`/`} href={`/`}>
+                  <a className="fa-circle pl">
+                    <FontAwesomeIcon icon={['fas', 'plus']} size="sm" />
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </Col>
+        <Col className="article-block pb-4" xs={12} md={3}>
+          <div className="hover">
+            <div className="article-img">
+              <Link as={`/`} href={`/`}>
+                <a>
+                  <div className="image-wrapper">
+                    <Image
+                      src="/static/categories/poetry.jpg"
+                      alt=""
+                      className="bg-img"
+                      fluid
+                    />
+                  </div>
+                </a>
+              </Link>
+            </div>
+            <div className="article-content">
+              <div className="cat-title">
+                <Link as={`/`} href={`/`}>
+                  <a>
+                    <h3 className="article-title">
+                      <span>Poetry</span>
+                    </h3>
+                  </a>
+                </Link>
+              </div>
+              <div className="bm-icon text-right">
+                <Link as={`/`} href={`/`}>
+                  <a className="fa-circle pl">
+                    <FontAwesomeIcon icon={['fas', 'plus']} size="sm" />
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </Col>
+        <Col className="article-block pb-4" xs={12} md={3}>
+          <div className="hover">
+            <div className="article-img">
+              <Link as={`/`} href={`/`}>
+                <a>
+                  <div className="image-wrapper">
+                    <Image
+                      src="/static/categories/short_story.jpg"
+                      alt=""
+                      className="bg-img"
+                      fluid
+                    />
+                  </div>
+                </a>
+              </Link>
+            </div>
+            <div className="article-content">
+              <div className="cat-title">
+                <Link as={`/`} href={`/`}>
+                  <a>
+                    <h3 className="article-title">
+                      <span>Short Story</span>
+                    </h3>
+                  </a>
+                </Link>
+              </div>
+              <div className="bm-icon text-right">
+                <Link as={`/`} href={`/`}>
+                  <a className="fa-circle ht">
+                    <FontAwesomeIcon icon={['fas', 'heart']} size="sm" />
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </Col>
+        <Col className="article-block pb-4" xs={12} md={3}>
+          <div className="hover">
+            <div className="article-img">
+              <Link as={`/`} href={`/`}>
+                <a>
+                  <div className="image-wrapper">
+                    <Image
+                      src="/static/categories/frame.jpg"
+                      alt=""
+                      className="bg-img"
+                      fluid
+                    />
+                  </div>
+                </a>
+              </Link>
+            </div>
+            <div className="article-content">
+              <div className="cat-title">
+                <Link as={`/`} href={`/`}>
+                  <a>
+                    <h3 className="article-title">
+                      <span>Frame Narrative</span>
+                    </h3>
+                  </a>
+                </Link>
+              </div>
+              <div className="bm-icon text-right">
+                <Link as={`/`} href={`/`}>
+                  <a className="fa-circle ht">
+                    <FontAwesomeIcon icon={['fas', 'heart']} size="sm" />
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </Col>
+        <Col className="article-block pb-4" xs={12} md={3}>
+          <div className="hover">
+            <div className="article-img">
+              <Link as={`/`} href={`/`}>
+                <a>
+                  <div className="image-wrapper">
+                    <Image
+                      src="/static/categories/non-fiction.jpg"
+                      alt=""
+                      className="bg-img"
+                      fluid
+                    />
+                  </div>
+                </a>
+              </Link>
+            </div>
+            <div className="article-content">
+              <div className="cat-title">
+                <Link as={`/`} href={`/`}>
+                  <a>
+                    <h3 className="article-title">
+                      <span>Non-fiction</span>
+                    </h3>
+                  </a>
+                </Link>
+              </div>
+              <div className="bm-icon text-right">
+                <Link as={`/`} href={`/`}>
+                  <a className="fa-circle ht">
+                    <FontAwesomeIcon icon={['fas', 'heart']} size="sm" />
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </Col>
+        <Col className="article-block pb-4" xs={12} md={3}>
+          <div className="hover">
+            <div className="article-img">
+              <Link as={`/`} href={`/`}>
+                <a>
+                  <div className="image-wrapper">
+                    <Image
+                      src="/static/categories/bio.jpg"
+                      alt=""
+                      className="bg-img"
+                      fluid
+                    />
+                  </div>
+                </a>
+              </Link>
+            </div>
+            <div className="article-content">
+              <div className="cat-title">
+                <Link as={`/`} href={`/`}>
+                  <a>
+                    <h3 className="article-title">
+                      <span>Biography</span>
+                    </h3>
+                  </a>
+                </Link>
+              </div>
+              <div className="bm-icon text-right">
+                <Link as={`/`} href={`/`}>
+                  <a className="fa-circle ht">
+                    <FontAwesomeIcon icon={['fas', 'heart']} size="sm" />
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </Col>
+        <Col className="article-block pb-4" xs={12} md={3}>
+          <div className="hover">
+            <div className="article-img">
+              <Link as={`/`} href={`/`}>
+                <a>
+                  <div className="image-wrapper">
+                    <Image
+                      src="/static/categories/journal.jpg"
+                      alt=""
+                      className="bg-img"
+                      fluid
+                    />
+                  </div>
+                </a>
+              </Link>
+            </div>
+            <div className="article-content">
+              <div className="cat-title">
+                <Link as={`/`} href={`/`}>
+                  <a>
+                    <h3 className="article-title">
+                      <span>Journal</span>
+                    </h3>
+                  </a>
+                </Link>
+              </div>
+              <div className="bm-icon text-right">
+                <Link as={`/`} href={`/`}>
+                  <a className="fa-circle ht">
+                    <FontAwesomeIcon icon={['fas', 'heart']} size="sm" />
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </Col>
+      </Row>
+      <Row className="justify-content-md-center mt-5">
+        <Col md="auto">
+          <Button size="md" className="btn">
+            See More
+          </Button>
+        </Col>
+      </Row>
+    </Container>
+    <style jsx>{`
+      .cat-title {
+        width: 80%;
+        display: inline-block;
+        padding-right: 10px;
+        box-sizing: border-box;
+      }
+      .bm-icon {
+        width: 20%;
+        display: inline-block;
+      }
+    `}</style>
+  </div>
 );
 
 export default CategoryList;
