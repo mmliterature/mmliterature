@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import '../src/nprogress.css';
 
 const Meta = () => (
   <Head>
@@ -27,12 +28,6 @@ const Meta = () => (
     <link
       href="https://fonts.googleapis.com/css?family=Padauk:400,700&amp;subset=myanmar"
       rel="stylesheet"
-    />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://unpkg.com/nprogress@0.2.0/nprogress.css"
     />
   </Head>
 );

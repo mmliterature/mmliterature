@@ -2,9 +2,7 @@ import styled from 'styled-components';
 
 const SideBarPostsStyle = styled.section`
   background-color: #ffffff;
-  .article-block {
-    margin: 0px 0px 28px;
-  }
+
   .article-img {
     position: relative;
     display: inline-block;

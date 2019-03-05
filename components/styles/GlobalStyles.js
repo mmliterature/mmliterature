@@ -67,6 +67,15 @@ const GlobalStyles = createGlobalStyle`
     display: inline-block;
     font: bold 11px/18px 'Roboto', sans-serif;
   }
+  .aut-title {
+    color: #000000;
+    text-transform: uppercase;
+    z-index: 10;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    font: bold 11px/18px 'Roboto', sans-serif;
+  }
   .section-title {
     color: rgb(0, 0, 0);
     font: 700 45px/55px 'Roboto', sans-serif;
@@ -115,12 +124,30 @@ const GlobalStyles = createGlobalStyle`
   .fa-circle.pl {
     padding: 3px 7px;
   }
-  
+  .hero-title {
+    color: #000000;
+    cursor: pointer;
+    -webkit-letter-spacing: -0.1px;
+    -moz-letter-spacing: -0.1px;
+    -ms-letter-spacing: -0.1px;
+    letter-spacing: -0.1px;
+    font: 700 45px/65px 'Roboto', sans-serif;
+    margin: 12px 0px 16px;
+  }
   .article-desc {
     color: #000000;
     font: 300 16px/22px 'Padauk', sans-serif;
     margin: 0px 0px 16px 0px;
     font-size: 16px !important;
+  }
+  .mt-8 {
+    margin-top: 4rem;
+  }
+  .mb-8 {
+    margin-bottom: 4rem;
+  }
+  .article-block {
+    margin: 0px 0px 28px;
   }
   @media only screen and (min-width: 1755px) {
     .mainContainer {

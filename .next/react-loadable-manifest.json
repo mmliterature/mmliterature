@@ -23,16 +23,16 @@
       "publicPath": "static/chunks/styles.js"
     },
     {
-      "id": 4,
+      "id": 3,
       "name": null,
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
     }
   ],
-  "../src/style.css": [
+  "../src/nprogress.css": [
     {
-      "id": "./src/style.css",
-      "name": "./src/style.css",
+      "id": "./src/nprogress.css",
+      "name": "./src/nprogress.css",
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
     }
