@@ -4,24 +4,10 @@ import Router from 'next/router';
 import NProgress from 'nprogress';
 
 import HeaderStyle from './HeaderStyle';
-import SignUp from '../SignInUp/SignUp';
-import SignIn from '../SignInUp/SignIn';
+import SignInUp from '../SignInUp/SignInUp';
+// import SignIn from '../SignInUp/SignIn_bk';
 
-import {
-  Image,
-  Navbar,
-  Nav,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button,
-  Container,
-  Col,
-  Row,
-  Modal
-} from 'react-bootstrap';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Image, Navbar, Nav, Button, Container } from 'react-bootstrap';
 
 Router.onRouteChangeStart = () => {
   NProgress.start();
@@ -37,29 +23,41 @@ class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showSignUpModal: false,
-      showSignInModal: false
+      showSignInUpModal: false,
+      signInShow: false,
+      signUpShow: false,
     };
+    this.handleShowSignIn = this.handleShowSignIn.bind(this);
+    this.handleShowSignUp = this.handleShowSignUp.bind(this);
+    this.closeSignUpModal = this.closeSignUpModal.bind(this);
   }
 
   closeSignUpModal = () =>
     this.setState({
-      showSignUpModal: false
-    });
-
-  closeSignInModal = () =>
-    this.setState({
-      showSignInModal: false
+      showSignInUpModal: false,
+      signInShow: false,
+      signUpShow: false,
     });
 
   handleShowSignIn = () => {
-    console.log('OK here');
-    this.setState({ showSignInModal: true, showSignUpModal: false });
+    this.setState({
+      showSignInUpModal: true,
+      signInShow: true,
+      signUpShow: false,
+    });
+  };
+
+  handleShowSignUp = () => {
+    this.setState({
+      showSignInUpModal: true,
+      signInShow: false,
+      signUpShow: true,
+    });
   };
 
   render() {
-    console.log(this.state);
-    const { showSignUpModal, showSignInModal } = this.state;
+    // console.log(this.state);
+    const { showSignInUpModal } = this.state;
     return (
       <HeaderStyle>
         <Navbar expand="lg" className="scrolling-navbar">
@@ -89,24 +87,21 @@ class Header extends Component {
 
               <Nav>
                 <Link href="/">
-                  <a
-                    className="menu-link"
-                    onClick={() => this.setState({ showSignInModal: true })}
-                  >
+                  <a className="menu-link" onClick={this.handleShowSignIn}>
                     Sign in
                   </a>
                 </Link>
               </Nav>
-              <Navbar.Text>
+              {/* <Navbar.Text>
                 <Link href="/">
-                  <a />
+                  <a>AAAA</a>
                 </Link>
-              </Navbar.Text>
+              </Navbar.Text> */}
               <Link href="/">
                 <Button
                   size="md"
                   className="btn btn-signup"
-                  onClick={() => this.setState({ showSignUpModal: true })}
+                  onClick={this.handleShowSignUp}
                 >
                   SIGN UP
                 </Button>
@@ -116,13 +111,12 @@ class Header extends Component {
         </Navbar>
         {/* <style jsx>{``}</style> */}
 
-        <SignUp
-          onShowSignIn={this.handleShowSignIn}
-          show={showSignUpModal}
+        <SignInUp
+          onShowSignIn={this.state.signInShow}
+          onShowSignUp={this.state.signUpShow}
+          show={showSignInUpModal}
           onHide={this.closeSignUpModal}
         />
-
-        <SignIn show={showSignInModal} onHide={this.closeSignInModal} />
       </HeaderStyle>
     );
   }

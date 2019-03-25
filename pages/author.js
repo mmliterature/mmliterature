@@ -6,10 +6,10 @@ import AuthorInfo from '../components/Styles/AuthorInfo';
 import AuthorRelatedPosts from '../components/RecentPosts/AuthorRelatedPosts';
 
 const trendingBackground = {
-  background: 'linear-gradient(to bottom, #f7f7f7 51%, #ffffff 50%)'
+  background: 'linear-gradient(to bottom, #f7f7f7 51%, #ffffff 50%)',
 };
 const transparentBackground = {
-  background: 'transparent'
+  background: 'transparent',
 };
 const Author = () => (
   <Layout>
@@ -65,7 +65,6 @@ const Author = () => (
           </Col>
         </Row>
       </Container>
-
       <Container fluid style={transparentBackground}>
         <Row>
           <Col xs={12} md={12}>
