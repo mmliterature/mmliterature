@@ -3760,10 +3760,10 @@ module.exports = __webpack_require__(/*! ./dist/lib/head */ "./node_modules/next
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_error&absolutePagePath=C%3A%5CUsers%5Cshwe.yee%5CDocuments%5Cgit%5Csyw%5Cmml%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js!./":
-/*!*************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_error&absolutePagePath=C%3A%5CUsers%5Cshwe.yee%5CDocuments%5Cgit%5Csyw%5Cmml%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js ***!
-  \*************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_error&absolutePagePath=C%3A%5CUsers%5Cshwe.yee%5CDocuments%5Cgit%5Csyw%5Cmmliterature%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js!./":
+/*!**********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_error&absolutePagePath=C%3A%5CUsers%5Cshwe.yee%5CDocuments%5Cgit%5Csyw%5Cmmliterature%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js ***!
+  \**********************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4564,14 +4564,14 @@ module.exports = (__webpack_require__(/*! dll-reference dll_66dd73aed3cb2b816ccf
 
 /***/ }),
 
-/***/ 5:
-/*!*****************************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F_error&absolutePagePath=C%3A%5CUsers%5Cshwe.yee%5CDocuments%5Cgit%5Csyw%5Cmml%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js ***!
-  \*****************************************************************************************************************************************************************************/
+/***/ 1:
+/*!**************************************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F_error&absolutePagePath=C%3A%5CUsers%5Cshwe.yee%5CDocuments%5Cgit%5Csyw%5Cmmliterature%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js ***!
+  \**************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F_error&absolutePagePath=C%3A%5CUsers%5Cshwe.yee%5CDocuments%5Cgit%5Csyw%5Cmml%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_error&absolutePagePath=C%3A%5CUsers%5Cshwe.yee%5CDocuments%5Cgit%5Csyw%5Cmml%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F_error&absolutePagePath=C%3A%5CUsers%5Cshwe.yee%5CDocuments%5Cgit%5Csyw%5Cmmliterature%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_error&absolutePagePath=C%3A%5CUsers%5Cshwe.yee%5CDocuments%5Cgit%5Csyw%5Cmmliterature%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js!./");
 
 
 /***/ }),
@@ -4587,5 +4587,5 @@ module.exports = dll_66dd73aed3cb2b816ccf;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js"]]]));;
+},[[1,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=_error.js.map

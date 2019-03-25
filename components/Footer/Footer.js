@@ -21,11 +21,21 @@ import {
 library.add(faEnvelope, faKey, faIgloo, faUserCircle, faHeart, faPlus);
 
 import {
+  faFacebook,
+  faGoogle,
+  faGithub,
   faFacebookF,
   faTwitter,
   faGooglePlusG
 } from '@fortawesome/free-brands-svg-icons';
-library.add(faFacebookF, faTwitter, faGooglePlusG);
+library.add(
+  faFacebook,
+  faGoogle,
+  faGithub,
+  faFacebookF,
+  faTwitter,
+  faGooglePlusG
+);
 
 import { faCircle as fasFaCircle } from '@fortawesome/free-solid-svg-icons'; // ES Module "as" syntax
 import { faCircle as farFaCircle } from '@fortawesome/free-regular-svg-icons';

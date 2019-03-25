@@ -6,7 +6,7 @@ import AuthorInfo from '../components/Styles/AuthorInfo';
 import AuthorRelatedPosts from '../components/RecentPosts/AuthorRelatedPosts';
 
 const trendingBackground = {
-  background: '#f7f7f7'
+  background: 'linear-gradient(to bottom, #f7f7f7 51%, #ffffff 50%)'
 };
 const transparentBackground = {
   background: 'transparent'

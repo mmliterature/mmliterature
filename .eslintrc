@@ -100,11 +100,5 @@
       }
     ]
   },
-  "settings": {
-    "mocha/additionalTestFunctions": ["describeModule"]
-  },
-  "globals": {
-    "reqlib": true
-  },
   "plugins": ["prettier"]
 }

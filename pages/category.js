@@ -3,6 +3,10 @@ import Layout from '../components/MyLayout.js';
 import { Container, Col, Row, Button } from 'react-bootstrap';
 import CategoryList from '../components/CategoryList';
 
+const trendingBackground = {
+  background: 'linear-gradient(to bottom, #f7f7f7 51%, #ffffff 50%)'
+};
+
 const Category = () => (
   <Layout>
     <Container>

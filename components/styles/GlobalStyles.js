@@ -48,6 +48,20 @@ const GlobalStyles = createGlobalStyle`
     background: #ffffff;
     border-color: #e81e61;
   }
+  button.btn-white {
+    color: #ff3366 !important;
+    background: #ffffff !important;
+    border-color: #ff3366 !important;
+  }
+  button.btn-white:hover {
+    color: #ffffff !important;
+    background: #ff3366 !important;
+    border-color: #ff3366 !important;
+  }
+  button.btn-white svg {
+    font-size: 1.5em;
+    margin-right: 5px;
+}
   .image-wrapper {
     margin-bottom: 20px;
   }
@@ -148,6 +162,47 @@ const GlobalStyles = createGlobalStyle`
   }
   .article-block {
     margin: 0px 0px 28px;
+  }
+
+  /* Modal CSS */
+  .modal-header {
+    border-bottom: 0px;
+    padding: 2rem 2rem 1rem 2rem;
+  }
+  .modal-body {
+    padding: 0rem 2rem 1rem 2rem;
+  }
+  .modal-body p {
+    color: #000000;
+    font: 300 16px/22px 'Padauk',sans-serif;
+    margin: 0px 0px 16px 0px;
+    font-size: 16px !important;
+  }
+  .modal-body p a {
+    color: #ff3366;
+  }
+  
+  .modal-footer {
+    border-top: 0px;
+    padding: 0rem 2rem 2rem 2rem;
+  }
+  .modal-title {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .modal-header-title {
+    -webkit-letter-spacing: -0.1px;
+    -moz-letter-spacing: -0.1px;
+    -ms-letter-spacing: -0.1px;
+    letter-spacing: -0.1px;
+    font: 700 34px/44px 'Roboto',sans-serif;
+    margin: 1rem 0rem 0.3rem 0rem;
+  }
+  .modal-backdrop {
+    background-color: #fff;
+  }
+  .modal-backdrop.show {
+    opacity: 0.8;
   }
   @media only screen and (min-width: 1755px) {
     .mainContainer {
